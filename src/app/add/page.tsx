@@ -1,7 +1,7 @@
 "use client";
 
 export default async function Home() {
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e:any) => {
     e.preventDefault();
     const ob = {
       movie_name: e.target.movie_name.value,
