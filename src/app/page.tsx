@@ -8,9 +8,10 @@ export const metadata = {
   title: "Movie Catalogue",
 };
 
+export const dynamic = 'force-dynamic'
+
 export default async function Home() {
-  const res = await fetch(process.env.DEPLOYED_URL + "api/movie");
-  const { data } = await res.json();
+  const data = await db.select().from(movies);
   return (
     <div className="mx-auto mt-20 mb-10 max-w-4xl text-center sm:px-0 bg-white">
       <h1 className="mt-5 text-5xl font-extrabold leading-[1.15] text-black sm:text-6xl sm:leading-[1.15]">
@@ -23,7 +24,7 @@ export default async function Home() {
         Built on top of MySQL and other amazing technologies.
       </h2>
       <div className="grid grid-cols-3 gap-8">
-        {(data).map((movie:any) => {
+        {data.map((movie) => {
           return (
             <div className="max-w-sm rounded overflow-hidden shadow-lg">
               <img
