@@ -35,3 +35,29 @@ export async function POST(req: Request) {
   }
 }
 
+export async function GET() {
+  try {
+    const data = await db.select().from(movies);
+    return new Response(
+      JSON.stringify({
+        message: "Movies fetched",
+        data,
+        success: true,
+      }),
+      {
+        status: 200,
+      }
+    );
+  } catch (err) {
+    return new Response(
+      JSON.stringify({
+        message: "Unable to fetch Movies",
+        success: false,
+        err
+      }),
+      {
+        status: 500,
+      }
+    );
+  }
+}
