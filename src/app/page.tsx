@@ -5,7 +5,7 @@ import DeleteButton from "./components/delete";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Movie Catalogue",
+  title: "Music Management",
 };
 
 export const dynamic = "force-dynamic";
