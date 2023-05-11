@@ -16,8 +16,8 @@ export default async function Home() {
     <div className="h-screen w-screen bg-black">
       <div className="mx-auto pt-20 mb-10 max-w-4xl text-center sm:px-0 bg-black">
         <h1 className=" text-5xl font-extrabold leading-[1.15] text-black sm:text-6xl sm:leading-[1.15]">
-          <span className="bg-gradient-to-r from-blue-500 via-pink-600 to-purple-500 bg-clip-text text-transparent">
-          Music Management System &nbsp;for DBMS
+          <span className="text-white bg-clip-text text-transparent">
+          Music Management System
           </span>
         </h1>
         <h2 className="mt-5 text-lg text-gray-200 sm:text-xl pb-10">
