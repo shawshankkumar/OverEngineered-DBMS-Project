@@ -3,12 +3,13 @@ import { movies } from "@/utils/db/schema";
 
 export async function POST(req: Request) {
   try {
-    const { movie_name, movie_description, movie_poster_url } =
+    const { movie_name, movie_description, movie_poster_url, singer } =
       await req.json();
     const insertMovie = await db.insert(movies).values({
       movie_name,
       movie_description,
       movie_poster_url,
+      des: singer
     });
     return new Response(
       JSON.stringify({

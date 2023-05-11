@@ -7,7 +7,7 @@ export default function DeleteButton({ id }: { id: number }) {
   }; 
   return (
     <button
-      className="bg-gradient-to-r from-amber-500 via-orange-600 to-yellow-500 hover:from-orange-600 hover:via-amber-500 hover:to-orange-600 text-white font-bold py-2 px-4 rounded"
+      className="bg-gradient-to-r from-red-500 via-purple-600 to-indigo-500 hover:from-purple-600 hover:via-red-500 hover:to-purple-600 text-white font-bold py-2 px-4 rounded"
       onClick={handleClick}
     >
       Delete
