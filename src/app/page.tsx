@@ -52,9 +52,8 @@ export default async function Home() {
           );
         })}
       </div>
-<!--       <p className="text-sm font-semibold text-black  bg-gradient-to-r from-amber-500 via-orange-600 to-yellow-500 bg-clip-text text-transparent pt-16">
-        Created by Shashank Kumar, Dheeraj Sajja and Anupama Jha
-      </p> -->
+      <p className="text-sm font-semibold text-black  bg-gradient-to-r from-amber-500 via-orange-600 to-yellow-500 bg-clip-text text-transparent pt-16">
+      </p>
     </div>
   );
 }
